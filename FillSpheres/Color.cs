@@ -14,24 +14,27 @@ namespace FillSpheres
         private int Gr { get; set; }
 
         // Constructor that defines the colors;
-        public Color(int red, int green, int blue, int gray)
+        public Color(int red, int green, int blue, int grey)
         {
             R = red;
             G = green;
             B = blue;
-            Gr = gray;
+            Gr = grey;
 
         }
 
+        // Constructor that defines a value to alpha;
         public Color(int red, int green, int blue) : this(red, green, blue, 255)
         {
         }
 
-        public int GetGray()
+        // Get the color value of Grey
+        public int GetGrey()
         {
             return (R + G + B) / 3;
         } 
 
+        // Get the colors name;
         public string GetColorNames()
         {
             if (R == 255 && G == 0 && B == 0)
@@ -48,7 +51,7 @@ namespace FillSpheres
             }
             else
             {
-                return "Gray";
+                return "Unknown";
             }
 
         }
