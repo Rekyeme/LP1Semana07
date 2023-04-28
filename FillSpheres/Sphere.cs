@@ -7,10 +7,12 @@ namespace FillSpheres
 {
     public class Sphere
     {
+        // Object properties;
         private Color Color { get; set; }
         private double Radius { get; set; }
         private int Thrown;
 
+        // Constructor that defines the class properties;
         public Sphere(Color Color, double Radius, int Thrown)
         {
             this.Color = Color;
@@ -18,11 +20,13 @@ namespace FillSpheres
             this.Thrown = 0;
         }
 
+        // Pops the sphere and set it's radius to 0;
         public void Pop()
         {
             Radius = 0;
         }
 
+        // If the sphere is not popped, increase the amount of times the sphere was thrown;
         public void Throw()
         {
             if (Radius > 0)
@@ -31,6 +35,7 @@ namespace FillSpheres
             }
         }
 
+        // Returns the number of times the sphere was thrown;
         public int GetTimesThrown()
         {
             return this.Thrown;
