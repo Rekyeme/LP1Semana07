@@ -8,9 +8,9 @@ namespace FillSpheres
     public class Sphere
     {
         // Object properties;
-        private Color Color { get; set; }
-        private double Radius { get; set; }
-        private int Thrown;
+        public Color Color { get; set; }
+        public double Radius { get; set; }
+        public int Thrown;
 
         // Constructor that defines the class properties;
         public Sphere(Color Color, double Radius, int Thrown)
